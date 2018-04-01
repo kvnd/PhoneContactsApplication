@@ -18,11 +18,8 @@ public class Contact {
         return number;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
+    // Convenience/Factory method (static)
+    public static Contact createContact(String name, String number) {
+        return new Contact(name, number);
     }
 }
